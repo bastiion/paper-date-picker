@@ -12,7 +12,7 @@
     "url": "git+https://github.com/bendavis78/paper-date-picker.git"
   },
   "homepage": "https://github.com/bendavis78/paper-date-picker#readme",
-  "name": "paper-date-picker",
+  "name": "@polymer/paper-date-picker",
   "version": "1.2.2",
   "main": "index.js",
   "devDependencies": {
