@@ -1,5 +1,8 @@
-<link rel="import" href="../polymer/lib/elements/custom-style.html">
+import '@polymer/polymer/lib/elements/custom-style.js';
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
 
+$_documentContainer.innerHTML = `
 <custom-style>
   <style is="custom-style">
   /* mixin definitions */
@@ -26,12 +29,12 @@
 <dom-module id="paper-date-picker-dialog-style">
   <template>
     <style>
-      /* Application of mixins to local .paper-date-picker-dialog elements */
+      /* Application of mixins to local .paper-date-picker-dialog elements */     
       .paper-date-picker-dialog {
         @apply --paper-date-picker-dialog;
       }
       .paper-date-picker-dialog > paper-date-picker {
-        --paper-calendar: {
+        --paper-calendar: {s
           @apply --paper-date-picker-dialog-calendar;
         };
         @apply --paper-date-picker-dialog-picker;
@@ -43,4 +46,6 @@
       }
     </style>
   </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);
