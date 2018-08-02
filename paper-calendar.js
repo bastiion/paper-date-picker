@@ -10,6 +10,7 @@ import '@polymer/paper-styles/default-theme.js';
 import '@polymer/paper-styles/shadow.js';
 import '@polymer/paper-styles/typography.js';
 import './paper-date-picker-icons.js';
+import moment from 'moment';
 // Ignore movement within this distance (px)
 const WIGGLE_THRESHOLD = 4;
 const WIGGLE_THRESHOLD_SQUARE = WIGGLE_THRESHOLD * WIGGLE_THRESHOLD;
